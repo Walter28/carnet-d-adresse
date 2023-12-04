@@ -1,0 +1,442 @@
+/* code css pour index  */
+
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: badscript;
+    src: url(../fonts/BadScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: bally;
+    src: url(../fonts/Ballsye.ttf);
+}
+
+@font-face {
+    font-family: triya;
+    src: url(../fonts/Triyastie.ttf);
+}
+
+@font-face {
+    font-family: openSans;
+    src: url(../fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: ralewayB;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: slabo;
+    src: url(../fonts/slabo.ttf);
+}
+
+@font-face {
+    font-family: parisienne;
+    src: url(../fonts/Parisienne-Regular.ttf);
+}
+
+@font-face {
+    font-family: poiret;
+    src: url(../fonts/PoiretOne-Regular.ttf);
+}
+
+/* quelques couleurs */
+/*
+orange clair : #ff0202
+orange floue : #c89446
+red : #ce1a41 
+*/
+
+p{
+    font-family: openSans;
+}
+
+.h{
+    font-family: parisienne;
+    font-weight: bold;
+    color: #ff0202;
+    font-size: 60px;
+}
+
+.resto-menu a{
+    text-decoration: none;
+    margin-left: 4px;
+    color: #ff0202;
+}
+
+
+/* navbar : css */
+@media screen and (min-width : 991px) {
+    #navbarText{
+        display: flex;
+        justify-content: end;
+    }
+}
+
+nav{
+    background-color: #fff;
+}
+
+.navbar{
+    position:fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+/* header : css */
+/* .header{
+    background: url('../img/logo2.jpg') no-repeat center center / cover;
+    color: #ffff;
+    height: 600px;
+    z-index: 2;
+} */
+
+.header-other { /*header pour les autres menus de ma page*/
+}
+
+.header-scrolled {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.header-center-elt{
+    color: #fff;
+    /* background-color: red; */
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+}
+
+.header-footer-elt{
+    background-color: aqua;
+}
+
+.header-footer-elt form p{
+    display: inline-block;
+}
+
+.service-resto .card, .service-booking .card{
+    /* margin: 0 20px; */
+    height: 22rem;
+    cursor: pointer;
+}
+
+
+.service-resto .restaurant, .service-booking .booking{
+    background-image: url('../img/restorant.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-booking .booking{
+    background-image: url('../img/booking.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service-resto h5, .service-booking h5{
+    color: #fff;
+    text-align: center;
+    background-color: #07090f;
+    opacity: .7;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    position: relative;
+    top: 86%;
+}
+
+.service-resto a, .service-booking a{
+    text-decoration: none;
+}
+
+.service-resto .card > h5{
+    color: #fff !important;
+}
+
+
+
+/* main :  css  */
+.illustration{
+    padding: 40px 0;
+    /* background-color: red; */
+    width: 90%;
+    margin: auto;
+}
+
+.illustration .illust-img-cont{
+    display: inline-block;
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+.illustration .illust-body{
+    display: inline-block;
+    width: 49%;
+    line-height: auto;
+    /* background-color: aqua; */
+    padding-top: 15%;
+}
+
+.illust-img{
+    width: 100%;
+    height: auto;
+}
+
+.some-rooms{
+    /* height: 650px; */
+    background-color: #f6e6cf;
+    padding: 40px 0;
+}
+
+.reservation-btn{
+    background-color: orangered;
+    border: 0;
+}
+
+.bynight{
+    font-size: 15px;
+}
+
+.btn-cont .btn{
+    width: 100%;
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+}
+
+.card-title{
+    display: inline-block;
+}
+
+.stars{
+    padding-left: 10%;
+    display: inline-block;
+}
+
+.bed-icon{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.bath-icon{
+    display: inline-block;
+    width: 49%;
+}
+
+.contact-info {
+    padding: 40px 0;
+    /* background-color:#f4f4f4; */
+    width: 100%;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: rgb(17, 0, 255);
+    cursor: pointer;
+}
+
+.contact-info i{
+    /* color: orangered; */
+}
+
+.contact-info a:hover{
+    /* text-decoration: wavy; */
+}
+
+iframe{
+    width: 100%;
+    height: inherit;
+}
+
+.contact-info .location{
+    display: inline-block;
+    position: left;
+    width: 50%;
+    height: 400px;
+    /* background-color: red; */
+}
+
+.contact-info .contact{
+    display: inline-block;
+    position: right;
+    width: 49%;
+    vertical-align: top;
+    padding-left: 50px;
+    /* background-color: aqua; */
+}
+
+.nos-services {
+    padding: 40px 0;
+}
+
+.nos-services .service-resto{
+    display: inline-block;
+    position: left;
+}
+
+.nos-services .service-booking{
+    display: inline-block;
+    position: right;
+    margin: 0 25px;
+}
+
+/* css pour modal reservation */
+.info-perso{
+    /* padding: 0 40px; */
+}
+.modal-btn-cont{
+    position: relative;
+    float: right;
+    padding: 20px 0;
+}
+
+
+
+/* footer : css  */
+footer{
+    background-color: #000;
+    color: #ffff;
+    padding: 20px 0;
+}
+
+.footer-media i{
+    font-size: 25px;
+    margin: 0 10px;
+    border: 1px inset;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.footer-media a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-last{
+    letter-spacing: 3px;
+}
+
+/* .footer .row{
+    width: 70%;
+    margin: auto;
+} */
+
+
+/* CSS pour reservation  */
+.reserv-intro {
+    padding: 80px 0;
+}
+
+.fa-plus{
+    position: absolute;
+    bottom: 65%;
+    right: 35px;
+    color: orangered;
+    font-size: 20px;
+    border: 1px solid orangered;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.reserv-img-contain{
+    overflow: hidden;
+}
+
+.reserv-img-contain img{
+    transition: 0.3s all ease-in-out;
+}
+
+.detail-zone{
+    display: flex;
+}
+
+.reserv-img-contain:hover img {
+    cursor: pointer;
+    transform: scale(1.4);
+    background-color: red;
+}
+
+.detail{
+    color: #fff;
+    position: absolute;
+    right: 33%;
+    top: 19%;
+}
+
+.modal-body-carousel{}
+
+.info-container{
+    width: 200px;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* CSS pour restauran  */
+.resto-intro{
+    padding: 80px 0;
+}
+
+.resto-items .card{
+    margin: 0 20px;
+    height: 22rem;
+    cursor: pointer;
+}
+
+.resto-items .card1{
+    background-image: url('../img/restorant.jpg') ;
+    background-size: cover;
+}
+
+.resto-items .card2{
+    background-image: url('../img/burguer.jpg') ;
+    background-size: cover;
+}
+
+.resto-items .card3{
+    background-image: url('../img/loso.jpg') ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.resto-items h5{
+    color: #fff;
+    background-color: #07090f;
+    opacity: .9;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    position: relative;
+    top: 40%;
+}
+
+.row > * {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.resto-items{
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
